@@ -16,10 +16,35 @@ export default function RecruitmentForm() {
             design: false,
             socialMedia: false
         },
-        motivation: '',
-        collaboration: '',
-        creativeIdea: '',
-        teamInterest: ''
+        // Technical team specific questions
+        technicalExperience: '',
+        techLanguages: '',
+        techProjects: '',
+        problemSolving: '',
+        techInterests: '',
+        learningApproach: '',
+        // Curation team specific questions
+        writingPreference: '',
+        proudContent: '',
+        reelCaption: '',
+        documentationDetails: '',
+        learningInterest: '',
+        otherClub: '',
+        socialLinks: '',
+        resume: null,
+        // Social Media team specific questions
+        unlimitedResources: '',
+        technicalTopic: '',
+        socialMediaRole: '',
+        studentCommunity: '',
+        marketingCampaign: '',
+        // Design team specific questions
+        designChoice: '',
+        designSoftware: '',
+        designConflict: '',
+        designExperience: '',
+        designProcess: '',
+        portfolio: ''
     });
     
     const [showToast, setShowToast] = useState({ message: '', type: '' });
@@ -66,6 +91,14 @@ export default function RecruitmentForm() {
         }
     };
 
+    const handleFileChange = (e) => {
+        const { name, files } = e.target;
+        setFormData((prevState) => ({
+            ...prevState,
+            [name]: files[0],
+        }));
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         
@@ -73,16 +106,14 @@ export default function RecruitmentForm() {
         if (!formData.name || !formData.usn || !formData.branch || 
             !formData.semester || !formData.email || !formData.phone ||
             (!formData.teams.technical && !formData.teams.curation && 
-             !formData.teams.design && !formData.teams.socialMedia) ||
-            !formData.motivation || !formData.collaboration || 
-            !formData.creativeIdea || !formData.teamInterest) {
+             !formData.teams.design && !formData.teams.socialMedia)) {
             setShowToast({ message: 'Please fill in all required fields', type: 'error' });
             return;
         }
 
-        // Check if semester is valid (3rd or MCA)
-        if (formData.semester !== '3' && formData.semester !== 'MCA') {
-            setShowToast({ message: 'Only 3rd semester or MCA students can apply', type: 'error' });
+        // Check if semester is valid (3rd)
+        if (formData.semester !== '3') {
+            setShowToast({ message: 'Only 3rd semester students can apply', type: 'error' });
             return;
         }
 
@@ -123,10 +154,31 @@ export default function RecruitmentForm() {
                     design: false,
                     socialMedia: false
                 },
-                motivation: '',
-                collaboration: '',
-                creativeIdea: '',
-                teamInterest: ''
+                technicalExperience: '',
+                techLanguages: '',
+                techProjects: '',
+                problemSolving: '',
+                techInterests: '',
+                learningApproach: '',
+                writingPreference: '',
+                proudContent: '',
+                reelCaption: '',
+                documentationDetails: '',
+                learningInterest: '',
+                otherClub: '',
+                socialLinks: '',
+                resume: null,
+                unlimitedResources: '',
+                technicalTopic: '',
+                socialMediaRole: '',
+                studentCommunity: '',
+                marketingCampaign: '',
+                designChoice: '',
+                designSoftware: '',
+                designConflict: '',
+                designExperience: '',
+                designProcess: '',
+                portfolio: ''
             });
             
             setShowToast({ message: 'Recruitment form submitted successfully!', type: 'success' });
@@ -136,6 +188,9 @@ export default function RecruitmentForm() {
             setIsSubmitting(false);
         }
     };
+
+    // Check which teams are selected to show team-specific questions
+    const selectedTeams = Object.keys(formData.teams).filter(team => formData.teams[team]);
 
     return (
         <div className="relative w-full min-h-screen text-white overflow-hidden bg-black bg-opacity-50">
@@ -162,7 +217,7 @@ export default function RecruitmentForm() {
                         </span>
                     </h1>
                     <h2 className="text-2xl md:text-3xl font-bold mb-4 text-indigo-400">
-                        Curation & Documentation - Team 3.0
+                        Microsoft Learn Student Ambassadors – CIT Chapter
                     </h2>
                     <p className="text-lg font-medium text-indigo-400 mb-8">
                         Thank you for your interest in joining the Microsoft Learn Student Ambassadors – CIT Chapter
@@ -242,37 +297,20 @@ export default function RecruitmentForm() {
                         {/* Semester */}
                         <div>
                             <label className="block text-sm font-medium text-white mb-2">4. Semester (required)</label>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-                                <div className="flex items-center">
-                                    <input
-                                        type="checkbox"
-                                        id="semester3"
-                                        name="semester"
-                                        value="3"
-                                        checked={formData.semester === '3'}
-                                        onChange={(e) => setFormData(prev => ({ 
-                                            ...prev, 
-                                            semester: e.target.checked ? '3' : '' 
-                                        }))}
-                                        className="mr-2 h-5 w-5 text-indigo-600 rounded focus:ring-indigo-500"
-                                    />
-                                    <label htmlFor="semester3" className="text-white">Only 3rd</label>
-                                </div>
-                                <div className="flex items-center">
-                                    <input
-                                        type="checkbox"
-                                        id="semesterMCA"
-                                        name="semester"
-                                        value="MCA"
-                                        checked={formData.semester === 'MCA'}
-                                        onChange={(e) => setFormData(prev => ({ 
-                                            ...prev, 
-                                            semester: e.target.checked ? 'MCA' : '' 
-                                        }))}
-                                        className="mr-2 h-5 w-5 text-indigo-600 rounded focus:ring-indigo-500"
-                                    />
-                                    <label htmlFor="semesterMCA" className="text-white">MCA</label>
-                                </div>
+                            <div className="flex items-center">
+                                <input
+                                    type="checkbox"
+                                    id="semester3"
+                                    name="semester"
+                                    value="3"
+                                    checked={formData.semester === '3'}
+                                    onChange={(e) => setFormData(prev => ({ 
+                                        ...prev, 
+                                        semester: e.target.checked ? '3' : '' 
+                                    }))}
+                                    className="mr-2 h-5 w-5 text-indigo-600 rounded focus:ring-indigo-500"
+                                />
+                                <label htmlFor="semester3" className="text-white">Only 3rd</label>
                             </div>
                         </div>
 
@@ -357,85 +395,472 @@ export default function RecruitmentForm() {
                             </div>
                         </div>
 
-                        {/* Motivation */}
-                        <div>
-                            <label htmlFor="motivation" className="block text-sm font-medium text-white mb-2">
-                                8. What excites you about being part of MLSA, and how would you like to contribute this term? (required)
-                            </label>
-                            <p className="text-sm text-gray-400 mb-2">
-                                Purpose: Reveals motivation, alignment with club culture, and initiative.
-                            </p>
-                            <textarea
-                                id="motivation"
-                                name="motivation"
-                                value={formData.motivation}
-                                onChange={handleInputChange}
-                                rows={4}
-                                className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                placeholder="Share what excites you about MLSA and how you'd like to contribute..."
-                                required
-                            ></textarea>
-                        </div>
+                        {/* Technical Team Specific Questions */}
+                        {selectedTeams.includes('technical') && (
+                            <>
+                                <div>
+                                    <label htmlFor="technicalExperience" className="block text-sm font-medium text-white mb-2">
+                                        8. What technical experience do you have? (Web development, App development, etc.) (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Understanding your technical background.
+                                    </p>
+                                    <textarea
+                                        id="technicalExperience"
+                                        name="technicalExperience"
+                                        value={formData.technicalExperience}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Tell us about your technical experience..."
+                                        required
+                                    ></textarea>
+                                </div>
 
-                        {/* Collaboration */}
-                        <div>
-                            <label htmlFor="collaboration" className="block text-sm font-medium text-white mb-2">
-                                9. Tell us about a time you collaborated on a project or event. What role did you play, and what did you learn? (required)
-                            </label>
-                            <p className="text-sm text-gray-400 mb-2">
-                                Purpose: Highlights teamwork, adaptability, and reflection—key for all teams.
-                            </p>
-                            <textarea
-                                id="collaboration"
-                                name="collaboration"
-                                value={formData.collaboration}
-                                onChange={handleInputChange}
-                                rows={4}
-                                className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                placeholder="Describe a collaboration experience and what you learned..."
-                                required
-                            ></textarea>
-                        </div>
+                                <div>
+                                    <label htmlFor="techLanguages" className="block text-sm font-medium text-white mb-2">
+                                        9. Which programming languages or technologies are you most comfortable with? (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Identifying your technical strengths.
+                                    </p>
+                                    <textarea
+                                        id="techLanguages"
+                                        name="techLanguages"
+                                        value={formData.techLanguages}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="List programming languages and technologies you're comfortable with..."
+                                        required
+                                    ></textarea>
+                                </div>
 
-                        {/* Creative Idea */}
-                        <div>
-                            <label htmlFor="creativeIdea" className="block text-sm font-medium text-white mb-2">
-                                10. If you had to pitch a creative idea for a club activity, campaign, or post, what would it be? (required)
-                            </label>
-                            <p className="text-sm text-gray-400 mb-2">
-                                Purpose: Surfaces originality, relevance, and understanding of club vibe.
-                            </p>
-                            <textarea
-                                id="creativeIdea"
-                                name="creativeIdea"
-                                value={formData.creativeIdea}
-                                onChange={handleInputChange}
-                                rows={4}
-                                className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                placeholder="Pitch your creative idea for a club activity, campaign, or post..."
-                                required
-                            ></textarea>
-                        </div>
+                                <div>
+                                    <label htmlFor="techProjects" className="block text-sm font-medium text-white mb-2">
+                                        10. Describe a technical project you've worked on that you're proud of. What challenges did you face and how did you overcome them? (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Assessing problem-solving skills and project experience.
+                                    </p>
+                                    <textarea
+                                        id="techProjects"
+                                        name="techProjects"
+                                        value={formData.techProjects}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Tell us about a technical project you're proud of..."
+                                        required
+                                    ></textarea>
+                                </div>
 
-                        {/* Team Interest */}
-                        <div>
-                            <label htmlFor="teamInterest" className="block text-sm font-medium text-white mb-2">
-                                11. Which team(s) are you most interested in joining, and what strengths would you bring to that space? (required)
-                            </label>
-                            <p className="text-sm text-gray-400 mb-2">
-                                Purpose: Helps leads spot fit and self-awareness.
-                            </p>
-                            <textarea
-                                id="teamInterest"
-                                name="teamInterest"
-                                value={formData.teamInterest}
-                                onChange={handleInputChange}
-                                rows={4}
-                                className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                placeholder="Tell us which team(s) interest you most and what strengths you'd bring..."
-                                required
-                            ></textarea>
-                        </div>
+                                <div>
+                                    <label htmlFor="problemSolving" className="block text-sm font-medium text-white mb-2">
+                                        11. How do you approach solving a technical problem you've never encountered before? (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Understanding your problem-solving approach.
+                                    </p>
+                                    <textarea
+                                        id="problemSolving"
+                                        name="problemSolving"
+                                        value={formData.problemSolving}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Explain your approach to solving new technical problems..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="techInterests" className="block text-sm font-medium text-white mb-2">
+                                        12. What technical areas are you most interested in exploring or learning more about? (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Identifying learning interests and growth areas.
+                                    </p>
+                                    <textarea
+                                        id="techInterests"
+                                        name="techInterests"
+                                        value={formData.techInterests}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Tell us about technical areas you want to explore..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="learningApproach" className="block text-sm font-medium text-white mb-2">
+                                        13. How do you typically approach learning new technologies or programming languages? (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Understanding your learning methodology.
+                                    </p>
+                                    <textarea
+                                        id="learningApproach"
+                                        name="learningApproach"
+                                        value={formData.learningApproach}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Explain your approach to learning new technologies..."
+                                        required
+                                    ></textarea>
+                                </div>
+                            </>
+                        )}
+
+                        {/* Curation Team Specific Questions */}
+                        {selectedTeams.includes('curation') && (
+                            <>
+                                <div>
+                                    <label htmlFor="writingPreference" className="block text-sm font-medium text-white mb-2">
+                                        8. What kind of writing do you enjoy—storytelling, summarizing, captioning, or formal communication? Tell us why. (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Helps place them in roles they'll enjoy and thrive in.
+                                    </p>
+                                    <textarea
+                                        id="writingPreference"
+                                        name="writingPreference"
+                                        value={formData.writingPreference}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Tell us about your writing preferences..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="proudContent" className="block text-sm font-medium text-white mb-2">
+                                        9. What's one piece of content (a post, caption, or write-up) you've created that you're proud of? Tell us why. (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Surfaces expressive confidence and self-awareness.
+                                    </p>
+                                    <textarea
+                                        id="proudContent"
+                                        name="proudContent"
+                                        value={formData.proudContent}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Share a piece of content you're proud of..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="reelCaption" className="block text-sm font-medium text-white mb-2">
+                                        10. Write a short caption (1–2 lines) for a reel celebrating a team member's achievements. (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Reveals tone sensitivity and expressive style.
+                                    </p>
+                                    <textarea
+                                        id="reelCaption"
+                                        name="reelCaption"
+                                        value={formData.reelCaption}
+                                        onChange={handleInputChange}
+                                        rows={2}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Write a short caption..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="documentationDetails" className="block text-sm font-medium text-white mb-2">
+                                        11. While documenting an event, what details do you think are most important to include—and why? (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Reveals their instinct for relevance and clarity.
+                                    </p>
+                                    <textarea
+                                        id="documentationDetails"
+                                        name="documentationDetails"
+                                        value={formData.documentationDetails}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Tell us about important documentation details..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="learningInterest" className="block text-sm font-medium text-white mb-2">
+                                        12. What's one thing you'd love to learn or improve this term—writing, organizing, designing, or something else? (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Surfaces growth mindset.
+                                    </p>
+                                    <textarea
+                                        id="learningInterest"
+                                        name="learningInterest"
+                                        value={formData.learningInterest}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Tell us what you'd like to learn or improve..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="otherClub" className="block text-sm font-medium text-white mb-2">
+                                        13. Are you currently a member of any other club? If so, please specify the club and your role within it. (required)
+                                    </label>
+                                    <textarea
+                                        id="otherClub"
+                                        name="otherClub"
+                                        value={formData.otherClub}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Tell us about other clubs you're part of..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="socialLinks" className="block text-sm font-medium text-white mb-2">
+                                        14. Please provide a Linktree with all your social handles, if available, or alternatively, links to your LinkedIn profile, relevant social media, and portfolio. (required)
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="socialLinks"
+                                        name="socialLinks"
+                                        value={formData.socialLinks}
+                                        onChange={handleInputChange}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Enter your social media links..."
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <label htmlFor="resume" className="block text-sm font-medium text-white mb-2">
+                                        15. Attach your resume or CV. (required)
+                                    </label>
+                                    <input
+                                        type="file"
+                                        id="resume"
+                                        name="resume"
+                                        onChange={handleFileChange}
+                                        accept=".pdf,.doc,.docx"
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        required
+                                    />
+                                </div>
+                            </>
+                        )}
+
+                        {/* Social Media Team Specific Questions */}
+                        {selectedTeams.includes('socialMedia') && (
+                            <>
+                                <div>
+                                    <label htmlFor="unlimitedResources" className="block text-sm font-medium text-white mb-2">
+                                        Imagine MLSA had unlimited resources for one social media campaign—what would you create to make the community go viral? (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Tests creativity & platform understanding.
+                                    </p>
+                                    <textarea
+                                        id="unlimitedResources"
+                                        name="unlimitedResources"
+                                        value={formData.unlimitedResources}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Describe your dream social media campaign..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="technicalTopic" className="block text-sm font-medium text-white mb-2">
+                                        How would you turn a technical topic (like cloud computing or AI) into a fun, relatable post or reel for students? (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Checks ability to simplify complex concepts.
+                                    </p>
+                                    <textarea
+                                        id="technicalTopic"
+                                        name="technicalTopic"
+                                        value={formData.technicalTopic}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Explain how you would simplify a technical topic..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="socialMediaRole" className="block text-sm font-medium text-white mb-2">
+                                        Which part of a social media role—content creation, analytics, engagement, or trend spotting—excites you the most and why? (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Reveals strengths & interest area.
+                                    </p>
+                                    <textarea
+                                        id="socialMediaRole"
+                                        name="socialMediaRole"
+                                        value={formData.socialMediaRole}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Tell us which social media role excites you..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="studentCommunity" className="block text-sm font-medium text-white mb-2">
+                                        In your opinion, what makes student-led communities like MLSA different from regular college clubs, and how should marketing reflect that? (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Tests strategic thinking & understanding of brand identity.
+                                    </p>
+                                    <textarea
+                                        id="studentCommunity"
+                                        name="studentCommunity"
+                                        value={formData.studentCommunity}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Share your thoughts on student-led communities..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="marketingCampaign" className="block text-sm font-medium text-white mb-2">
+                                        Which recent marketing or promotional campaign (from any brand or community) inspired you the most, and what key idea would you bring from it to MLSA? (required)
+                                    </label>
+                                    <p className="text-sm text-gray-400 mb-2">
+                                        Purpose: Shows awareness of trends & ability to adapt best practices.
+                                    </p>
+                                    <textarea
+                                        id="marketingCampaign"
+                                        name="marketingCampaign"
+                                        value={formData.marketingCampaign}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Tell us about an inspiring marketing campaign..."
+                                        required
+                                    ></textarea>
+                                </div>
+                            </>
+                        )}
+
+                        {/* Design Team Specific Questions */}
+                        {selectedTeams.includes('design') && (
+                            <>
+                                <div>
+                                    <label htmlFor="designChoice" className="block text-sm font-medium text-white mb-2">
+                                        1. Why did you choose design? (required)
+                                    </label>
+                                    <textarea
+                                        id="designChoice"
+                                        name="designChoice"
+                                        value={formData.designChoice}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Tell us why you chose design..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="designSoftware" className="block text-sm font-medium text-white mb-2">
+                                        2. How many design software are you familiar with? (required)
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="designSoftware"
+                                        name="designSoftware"
+                                        value={formData.designSoftware}
+                                        onChange={handleInputChange}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="List design software you're familiar with..."
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <label htmlFor="designConflict" className="block text-sm font-medium text-white mb-2">
+                                        3. If you face a conflict with a teammate due to differences in design ideas, how would you handle it? (required)
+                                    </label>
+                                    <textarea
+                                        id="designConflict"
+                                        name="designConflict"
+                                        value={formData.designConflict}
+                                        onChange={handleInputChange}
+                                        rows={4}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Explain how you would handle design conflicts..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="designExperience" className="block text-sm font-medium text-white mb-2">
+                                        4. How long have you been designing? (required)
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="designExperience"
+                                        name="designExperience"
+                                        value={formData.designExperience}
+                                        onChange={handleInputChange}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Tell us about your design experience..."
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <label htmlFor="designProcess" className="block text-sm font-medium text-white mb-2">
+                                        5. Describe, in detail, your process for creating an Instagram post for an event, specify visual elements (like logos, text, and imagery etc), and anything you'd like to add, that you would use. (required)
+                                    </label>
+                                    <textarea
+                                        id="designProcess"
+                                        name="designProcess"
+                                        value={formData.designProcess}
+                                        onChange={handleInputChange}
+                                        rows={6}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Describe your Instagram post design process..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="portfolio" className="block text-sm font-medium text-white mb-2">
+                                        6. Please share your portfolio, if you have one. (required)
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="portfolio"
+                                        name="portfolio"
+                                        value={formData.portfolio}
+                                        onChange={handleInputChange}
+                                        className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        placeholder="Enter your portfolio link..."
+                                        required
+                                    />
+                                </div>
+                            </>
+                        )}
 
                         {/* Submit Button */}
                         <div className="text-center">

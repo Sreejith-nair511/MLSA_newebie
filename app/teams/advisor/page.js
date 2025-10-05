@@ -85,7 +85,7 @@ const AdvisorPage = () => {
               <div className="absolute -inset-2 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full opacity-70 blur-md"></div>
               <div className="relative rounded-full p-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20">
                 <Image
-                  src="/images/individual pics/megha mam.png"
+                  src="/images/individual pics/Megha_Sharma.jpg"
                   alt="Advisor Image"
                   width={280}
                   height={280}
@@ -100,9 +100,15 @@ const AdvisorPage = () => {
 
             {/* Name and Title */}
             <div className="text-center mt-8" data-aos="fade-up">
-              <h1 className="text-4xl font-bold text-white font-[Khand]">Prof. Megha Sharma</h1>
+              <h1 className="text-4xl font-bold text-white font-[Khand]">Megha Sharma</h1>
               <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-blue-300 text-lg font-medium mt-3">
-                Advisor of the Club
+                Head Of The Department – Master Of Computer Applications, Cambridge Institute of Technology
+              </div>
+              <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-blue-300 text-lg font-medium mt-3">
+                Assistant Professor at Cambridge Institute of Technology
+              </div>
+              <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-blue-300 text-lg font-medium mt-3">
+                Microsoft Faculty Advisor
               </div>
             </div>
 
@@ -110,7 +116,7 @@ const AdvisorPage = () => {
             <div className="mt-8 relative px-6" data-aos="fade-right">
               <FaQuoteLeft className="text-blue-400/50 absolute top-0 left-0 text-2xl" />
               <p className="text-white/80 italic text-lg leading-relaxed px-8">
-                Empowering students with technology to build the future.
+                Leadership isn’t about being the loudest voice in the room—it’s about listening, guiding, and making space for others to grow. That’s what builds legacy.
               </p>
               <FaQuoteRight className="text-blue-400/50 absolute bottom-0 right-0 text-2xl" />
             </div>
@@ -147,15 +153,15 @@ const AdvisorPage = () => {
               <div className="space-y-3 text-white/80 font-[GMVF]">
                 <p className="flex items-center">
                   <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                  Head Of The Department – Master Of Computer Applications, Cambridge Institute of Technology
+                </p>
+                <p className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
                   Assistant Professor at Cambridge Institute of Technology
                 </p>
                 <p className="flex items-center">
                   <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
-                  Department of Information Science & Engineering
-                </p>
-                <p className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
-                  Microsoft Certified Educator
+                  Microsoft Faculty Advisor
                 </p>
               </div>
             </div>

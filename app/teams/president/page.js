@@ -82,7 +82,7 @@ const Page = () => {
               <div className="absolute -inset-2 bg-gradient-to-r from-blue-500/40 to-purple-500/40 rounded-full opacity-70 blur-md"></div>
               <div className="relative rounded-full p-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20">
                 <Image
-                  src="/images/individual pics/dilip b.png"
+                  src="/images/individual pics/vidhula.jpeg"
                   alt="President Image"
                   width={280}
                   height={280}
@@ -97,9 +97,9 @@ const Page = () => {
 
             {/* Name and Title */}
             <div className="text-center mt-8" data-aos="fade-up">
-              <h1 className="text-4xl font-bold text-white font-[Khand]">Vidhula S</h1>
+              <h1 className="text-4xl font-bold text-white font-[Khand]">Vidhula Shree Shankar</h1>
               <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-blue-300 text-lg font-medium mt-3">
-                President 
+                President
               </div>
             </div>
 
@@ -107,7 +107,7 @@ const Page = () => {
             <div className="mt-8 relative px-6" data-aos="fade-right">
               <FaQuoteLeft className="text-blue-400/50 absolute top-0 left-0 text-2xl" />
               <p className="text-white/80 italic text-lg leading-relaxed px-8">
-                Innovation and collaboration are the keys to unlocking our community&apos;s potential.
+                As President, Vidhula aims to shape the MLSA CIT Chapter into a space where members are encouraged to think beyond boundaries and explore out of the box ideas. Her vision focuses on helping students discover their niche, build on their strengths, and embrace the skills that make them stand out, all while growing together as a community driven by curiosity and innovation.
               </p>
               <FaQuoteRight className="text-blue-400/50 absolute bottom-0 right-0 text-2xl" />
             </div>
@@ -142,7 +142,7 @@ const Page = () => {
                 Vision & Leadership
               </h2>
               <p className="text-white/80 leading-7 font-[GMVF]">
-                As President, Vidhula shivshankar envisions transforming our MLSA chapter into a hub of innovation and technical excellence. Her leadership focuses on creating opportunities for members to develop cutting-edge skills while building a supportive community that fosters growth and collaboration.
+                As President, Vidhula aims to shape the MLSA CIT Chapter into a space where members are encouraged to think beyond boundaries and explore out of the box ideas. Her vision focuses on helping students discover their niche, build on their strengths, and embrace the skills that make them stand out, all while growing together as a community driven by curiosity and innovation.
               </p>
             </div>
 
@@ -150,7 +150,7 @@ const Page = () => {
             <div className="mb-8 bg-white/5 rounded-xl p-6 border border-white/10" data-aos="fade-left" data-aos-delay="100">
               <h2 className="text-2xl font-semibold text-blue-400 mb-4 font-[Khand]">Biography</h2>
               <p className="text-white/80 leading-7 font-[GMVF]">
-                Since assuming the role in August 2025, Vidhula has embodied visionary leadership. Her unwavering commitment to turning ambitions into achievements has not only inspired but also elevated our community, driving us to new heights of excellence and collaboration.
+                Since taking on the role in September 2025, Vidhula strives to bring creativity, structure, and vision to the MLSA CIT Chapter. Starting as a volunteer in the Curation Team, she developed a keen sense for detail. Her journey has been shaped by observing, learning, and contributing to the chapter’s growth from within. Now, as President, she aims to build on that foundation, fostering innovation, empowering members, and creating a community that grows through shared purpose and collaboration.
               </p>
             </div>
 
@@ -161,10 +161,9 @@ const Page = () => {
                 Key Initiatives & Achievements
               </h2>
               <ul className="space-y-4 text-white/80 font-[GMVF]">
-                {['Guided the club to achieve its mission and vision through strategic planning and execution.', 
-                  'Organized successful events and mentorship programs that increased member engagement by 40%.', 
-                  'Supported club members with professional advice and created networking opportunities with industry experts.',
-                  'Established new partnerships with tech companies and other student organizations to expand our reach.'
+                {['Introduced fresh strategies to elevate content quality across platforms, blending structure with creativity.', 
+                  'Supported internal documentation efforts, helping streamline communication and preserve club memory through organized archives.', 
+                  'Actively contributed to club initiatives as a curator, maintaining content standards and fostering community engagement through collaborative efforts.'
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">

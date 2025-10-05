@@ -89,7 +89,7 @@ const Page = () => {
               <div className="absolute -inset-2 bg-gradient-to-r from-indigo-500/30 to-purple-500/30 rounded-full opacity-70 blur-md"></div>
               <div className="relative rounded-full p-1 bg-gradient-to-r from-indigo-500/20 to-purple-500/20">
                 <Image
-                  src="/images/individual pics/aaron.png"
+                  src="/images/individual pics/Tejas R Mutalik.png"
                   alt="Vice President Image"
                   width={280}
                   height={280}
@@ -104,9 +104,9 @@ const Page = () => {
 
             {/* Name and Title */}
             <div className="text-center mt-8" data-aos="fade-up">
-              <h1 className="text-4xl font-bold text-white font-[Khand]">Aaron Rohan</h1>
+              <h1 className="text-4xl font-bold text-white font-[Khand]">Tejas R Mutalik</h1>
               <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-indigo-300 text-lg font-medium mt-3">
-                Vice-President & Beta MLSA
+                Vice-President & Treasurer
               </div>
             </div>
 
@@ -114,7 +114,7 @@ const Page = () => {
             <div className="mt-8 relative px-6" data-aos="fade-right">
               <FaQuoteLeft className="text-indigo-400/50 absolute top-0 left-0 text-2xl" />
               <p className="text-white/80 italic text-lg leading-relaxed px-8">
-                Bridging vision with execution through collaboration and technical leadership.
+                As Vice President and Treasurer, Tejas brings a strategic calm to the MLSA CIT Chapter—balancing creativity with structure and ensuring that ideas are backed by thoughtful execution. His leadership focuses on building systems that support collaboration, clarity, and sustainable growth. Whether it’s guiding decisions or managing resources, Tejas leads with logic, empathy, and a deep commitment to community impact.
               </p>
               <FaQuoteRight className="text-indigo-400/50 absolute bottom-0 right-0 text-2xl" />
             </div>
@@ -149,7 +149,7 @@ const Page = () => {
                 Role & Responsibilities
               </h2>
               <p className="text-white/80 leading-7 font-[GMVF]">
-                As Vice President, Aaron works closely with the President to implement the club&apos;s vision and strategic initiatives. He excels in team management and community engagement, serving as the driving force that supports the team on their path toward impactful destinations. His leadership fosters collaboration and inclusivity at every step.
+                As Vice President and Treasurer, Tejas brings a strategic calm to the MLSA CIT Chapter—balancing creativity with structure and ensuring that ideas are backed by thoughtful execution. His leadership focuses on building systems that support collaboration, clarity, and sustainable growth. Whether it’s guiding decisions or managing resources, Tejas leads with logic, empathy, and a deep commitment to community impact.
               </p>
             </div>
 
@@ -157,7 +157,7 @@ const Page = () => {
             <div className="mb-8 bg-white/5 rounded-xl p-6 border border-white/10" data-aos="fade-left" data-aos-delay="100">
               <h2 className="text-2xl font-semibold text-indigo-400 mb-4 font-[Khand]">Biography</h2>
               <p className="text-white/80 leading-7 font-[GMVF]">
-                Aaron Rohan Raj, our esteemed vice president and a Beta MLSA, brings a wealth of technical expertise and leadership experience to his role. His passion for technology and education has been instrumental in shaping our club&apos;s direction and fostering a culture of continuous learning. As a key supporting leader, he ensures a cohesive and thriving community.
+                Tejas began his MLSA journey as a Marketing Team volunteer, where he explored storytelling, outreach, and audience engagement. That experience shaped his understanding of how visibility and structure go hand in hand. Now, stepping into his first term as Treasurer, he’s focused on streamlining operations, supporting cross-team coordination, and ensuring that every initiative is backed by clarity and care.
               </p>
             </div>
 
@@ -167,10 +167,9 @@ const Page = () => {
                 Contributions to the Club
               </h2>
               <ul className="space-y-4 text-white/80 font-[GMVF]">
-                {['Guided the club to achieve its mission and vision through strategic planning.', 
-                  'Organized successful events and mentorship programs that increased member engagement.', 
-                  'Supported club members with professional advice and created networking opportunities.',
-                  'Coordinated cross-functional teams to deliver successful technical workshops.'
+                {['Helped refine internal workflows for smoother planning and resource tracking across teams.', 
+                  'Supported documentation efforts to ensure financial transparency and operational consistency.', 
+                  'Contributed to club visibility during his time in marketing, helping shape outreach strategies and community engagement.'
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">

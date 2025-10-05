@@ -135,7 +135,7 @@ const Page = () => {
           Our Team Leads
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Lead 1 - Enhanced */}
           <div
             className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-lg rounded-xl p-8 text-center border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-blue-500/20 hover:shadow-xl"
@@ -147,20 +147,20 @@ const Page = () => {
             <div className="relative mb-6">
               <div className={`absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full opacity-70 blur-md transition-opacity duration-300 ${isHoveredLeads[0] ? 'opacity-100' : 'opacity-50'}`}></div>
               <Image
-                src="/images/individual pics/subash.png"
-                alt="AV Subash"
+                src="/images/individual pics/Tejaswini.jpg"
+                alt="Naga Tejaswini P"
                 width={128}
                 height={128}
                 className="relative w-32 h-32 mx-auto rounded-full border-2 border-white/20 hover:border-white/40 transition-all duration-300"
               />
             </div>
             <h3 className={`text-2xl font-semibold mb-2 text-white font-[Khand] transition-all duration-300 ${isHoveredLeads[0] ? 'text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400' : ''}`}>
-              AV Subash
+              Naga Tejaswini P
             </h3>
-            <p className="text-blue-300 mb-4 text-sm">Curation Team Lead</p>
+            <p className="text-blue-300 mb-4 text-sm">Team Lead</p>
             <div className="flex justify-center space-x-6">
               <a
-                href="https://www.linkedin.com/in/subash-av-7586792ab/"
+                href="https://www.linkedin.com/in/tejaswini-p-5b0bb9299/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
@@ -168,7 +168,7 @@ const Page = () => {
                 <FaLinkedin size={20} />
               </a>
               <a
-                href="https://www.instagram.com/su.bash6350/"
+                href="https://www.instagram.com/nagatejaswini.p/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
@@ -190,76 +190,25 @@ const Page = () => {
             <div className="relative mb-6">
               <div className={`absolute -inset-1 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-full opacity-70 blur-md transition-opacity duration-300 ${isHoveredLeads[1] ? 'opacity-100' : 'opacity-50'}`}></div>
               <Image
-                src="/images/individual pics/neha_cur.png"
-                alt="Neha Shantagiri"
+                src="/images/individual pics/Natalia.jpg"
+                alt="Natalia Mathews"
                 width={128}
                 height={128}
                 className="relative w-32 h-32 mx-auto rounded-full border-2 border-white/20 hover:border-white/40 transition-all duration-300"
               />
             </div>
             <h3 className={`text-2xl font-semibold mb-2 text-white font-[Khand] transition-all duration-300 ${isHoveredLeads[1] ? 'text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400' : ''}`}>
-              Neha Shantagiri
+              Natalia Mathews
             </h3>
-            <p className="text-purple-300 mb-4 text-sm">Curation Team Lead</p>
+            <p className="text-purple-300 mb-4 text-sm">Core team member</p>
             <div className="flex justify-center space-x-6">
               <a
-                href="https://www.linkedin.com/in/neha-shantagiri-11a8b6298/"
+                href="https://www.linkedin.com/in/natalia-mathews-b387b32bb/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
               >
                 <FaLinkedin size={20} />
-              </a>
-              <a
-                href="https://www.instagram.com/_neha_2810/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
-              >
-                <FaInstagram size={20} />
-              </a>
-            </div>
-          </div>
-
-          {/* Lead 3 - Enhanced */}
-          <div
-            className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-lg rounded-xl p-8 text-center border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-blue-500/20 hover:shadow-xl"
-            onMouseEnter={() => handleLeadHover(2, true)}
-            onMouseLeave={() => handleLeadHover(2, false)}
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            {/* Profile Image with glow effect */}
-            <div className="relative mb-6">
-              <div className={`absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full opacity-70 blur-md transition-opacity duration-300 ${isHoveredLeads[2] ? 'opacity-100' : 'opacity-50'}`}></div>
-              <Image
-                src="/images/individual pics/deekshita.png"
-                alt="Palleyboina Deekshitha"
-                width={128}
-                height={128}
-                className="relative w-32 h-32 mx-auto rounded-full border-2 border-white/20 hover:border-white/40 transition-all duration-300"
-              />
-            </div>
-            <h3 className={`text-2xl font-semibold mb-2 text-white font-[Khand] transition-all duration-300 ${isHoveredLeads[2] ? 'text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400' : ''}`}>
-              Palleyboina Deekshitha
-            </h3>
-            <p className="text-blue-300 mb-4 text-sm">Curation Team Lead</p>
-            <div className="flex justify-center space-x-6">
-              <a
-                href="https://www.linkedin.com/in/deekshi1124/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
-              >
-                <FaLinkedin size={20} />
-              </a>
-              <a
-                href="https://www.instagram.com/deekshi_1124/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
-              >
-                <FaInstagram size={20} />
               </a>
             </div>
           </div>
@@ -392,7 +341,7 @@ const Page = () => {
         >
           Team Members
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Member 1 */}
           <div
             className="team-card bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-lg rounded-xl p-8 text-center border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-blue-500/20 hover:shadow-xl"
@@ -401,7 +350,7 @@ const Page = () => {
             <div className="relative mb-6">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full opacity-0 group-hover:opacity-70 blur-md transition-opacity duration-300"></div>
               <Image
-                src="/images/individual pics/natalia.jpg"
+                src="/images/individual pics/Natalia.jpg"
                 alt="Natalia Mathews"
                 className="w-32 h-32 mx-auto rounded-full mb-6 border-2 border-white/20 hover:border-white/40 transition-all duration-300"
                 width={128}
@@ -411,6 +360,7 @@ const Page = () => {
             <h3 className="text-xl font-semibold mb-4 text-white font-[Khand] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-400 transition-all duration-300">
               Natalia Mathews
             </h3>
+            <p className="text-blue-300 mb-4 text-sm">Core team member</p>
             <div className="flex justify-center space-x-6">
               <a
                 href="https://www.linkedin.com/in/natalia-mathews-b387b32bb/"
@@ -430,51 +380,17 @@ const Page = () => {
             <div className="relative mb-6">
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-full opacity-0 group-hover:opacity-70 blur-md transition-opacity duration-300"></div>
               <Image
-                src="/images/individual pics/vidhula.png"
-                alt="Vidhula Shree Shankar"
+                src="/images/individual pics/Tejaswini.jpg"
+                alt="Naga Tejaswini P"
                 className="w-32 h-32 mx-auto rounded-full mb-6 border-2 border-white/20 hover:border-white/40 transition-all duration-300"
                 width={128}
                 height={128}
               />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-white font-[Khand] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-400 transition-all duration-300">
-              Vidhula Shree Shankar
+              Naga Tejaswini P
             </h3>
-            <div className="flex justify-center space-x-6">
-              <a
-                href="https://www.linkedin.com/in/vidhula-shree-shankar-2371062a7/"
-                className="p-2 bg-white/5 hover:bg-blue-500/20 rounded-full text-gray-500 hover:text-blue-300 transition-all duration-300"
-              >
-                <FaLinkedin size={24} />
-              </a>
-              <a
-                href="https://www.instagram.com/_vidhhh__/"
-                className="p-2 bg-white/5 hover:bg-pink-500/20 rounded-full text-gray-500 hover:text-pink-300 transition-all duration-300"
-              >
-                <FaInstagram size={24} />
-              </a>
-            </div>
-          </div>
-
-          {/* Member 3 */}
-          <div
-            className="team-card bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-lg rounded-xl p-8 text-center border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-blue-500/20 hover:shadow-xl"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div className="relative mb-6">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full opacity-0 group-hover:opacity-70 blur-md transition-opacity duration-300"></div>
-              <Image
-                src="/images/individual pics/tejaswini.png"
-                alt="Naga Tejaswini Pathipati"
-                className="w-32 h-32 mx-auto rounded-full mb-6 border-2 border-white/20 hover:border-white/40 transition-all duration-300"
-                width={128}
-                height={128}
-              />
-            </div>
-            <h3 className="text-xl font-semibold mb-4 text-white font-[Khand] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-400 transition-all duration-300">
-              Naga Tejaswini Pathipati
-            </h3>
+            <p className="text-purple-300 mb-4 text-sm">Team Lead</p>
             <div className="flex justify-center space-x-6">
               <a
                 href="https://www.linkedin.com/in/tejaswini-p-5b0bb9299/"
@@ -483,7 +399,7 @@ const Page = () => {
                 <FaLinkedin size={24} />
               </a>
               <a
-                href="https://www.instagram.com/nagatejaswini.p/profilecard/?igsh=dm42eHZyN28xcG91"
+                href="https://www.instagram.com/nagatejaswini.p/"
                 className="p-2 bg-white/5 hover:bg-pink-500/20 rounded-full text-gray-500 hover:text-pink-300 transition-all duration-300"
               >
                 <FaInstagram size={24} />

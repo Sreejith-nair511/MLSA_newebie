@@ -124,8 +124,8 @@ const Page = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full opacity-70 blur-md"></div>
               <div className="relative rounded-full p-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20">
                 <Image
-                  src="/images/individual pics/rithvik.png"
-                  alt="Rithvik"
+                  src="/images/individual pics/Sreejith s .jpg"
+                  alt="Sreejith"
                   width={228}
                   height={228}
                   className="rounded-full object-cover border-2 border-white/20"
@@ -136,17 +136,17 @@ const Page = () => {
             {/* Name and Title */}
             <div className="text-center mb-6">
               <h1 className="text-4xl font-bold text-white font-[Khand]">
-                Rithvik
+                Sreejith
               </h1>
               <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-blue-300 text-lg font-medium mt-3">
-                Technical Team Lead
+                Team Lead
               </div>
             </div>
 
             {/* Skills */}
             <div className="mb-6">
               <div className="flex flex-wrap justify-center gap-2">
-                {["React", "Node.js", "UI/UX"].map((skill) => (
+                {["Game Development", "Backend Engineering", "Creative Prototyping"].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-blue-500/10 text-blue-300 rounded-full text-sm">
                     {skill}
                   </span>
@@ -157,7 +157,7 @@ const Page = () => {
             {/* Social Links - Enhanced */}
             <div className="flex justify-center items-center gap-6 mt-8">
               <a
-                href="https://www.linkedin.com/in/rithvik1709/"
+                href="https://www.linkedin.com/in/sreejith-s-b232092a9/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
@@ -165,7 +165,7 @@ const Page = () => {
                 <FaLinkedin size={30} />
               </a>
               <a
-                href="https://www.instagram.com/_._.rithvik17_/ "
+                href="https://www.instagram.com/sreejith_s_nair/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
@@ -182,8 +182,8 @@ const Page = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-full opacity-70 blur-md"></div>
               <div className="relative rounded-full p-1 bg-gradient-to-r from-purple-500/20 to-blue-500/20">
                 <Image
-                  src="/images/individual pics/nikhil.png"
-                  alt="Nikhil Kumar"
+                  src="/images/individual pics/Anik.jpg"
+                  alt="Anik Tiwary"
                   width={228}
                   height={228}
                   className="rounded-full object-cover border-2 border-white/20"
@@ -194,17 +194,17 @@ const Page = () => {
             {/* Name and Title */}
             <div className="text-center mb-6">
               <h1 className="text-4xl font-bold text-white font-[Khand]">
-                Nikhil Kumar
+                Anik Tiwary
               </h1>
               <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-purple-300 text-lg font-medium mt-3">
-                Technical Team Lead
+                Team Lead
               </div>
             </div>
 
             {/* Skills */}
             <div className="mb-6">
               <div className="flex flex-wrap justify-center gap-2">
-                {["Python", "ML/AI", "Cloud"].map((skill) => (
+                {["Full-Stack Development", "System Architecture", "Interface development"].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-purple-500/10 text-purple-300 rounded-full text-sm">
                     {skill}
                   </span>
@@ -215,7 +215,7 @@ const Page = () => {
             {/* Social Links - Enhanced */}
             <div className="flex justify-center items-center gap-6 mt-8">
               <a
-                href="https://www.linkedin.com/in/nikhilinked/"
+                href="https://www.linkedin.com/in/anik-tiwary-4a1161292/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
@@ -223,7 +223,7 @@ const Page = () => {
                 <FaLinkedin size={30} />
               </a>
               <a
-                href="https://www.instagram.com/behera_munnu/"
+                href="https://www.instagram.com/anik_tiwary08/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
@@ -240,8 +240,8 @@ const Page = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full opacity-70 blur-md"></div>
               <div className="relative rounded-full p-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20">
                 <Image
-                  src="/images/individual pics/jai.png"
-                  alt="G Jayaditya"
+                  src="/images/individual pics/Sahina.jpg"
+                  alt="Sahina Parbin"
                   width={228}
                   height={228}
                   className="rounded-full object-cover border-2 border-white/20"
@@ -252,17 +252,17 @@ const Page = () => {
             {/* Name and Title */}
             <div className="text-center mb-6">
               <h1 className="text-4xl font-bold text-white font-[Khand]">
-                G Jayaditya
+                Sahina Parbin
               </h1>
               <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-blue-300 text-lg font-medium mt-3">
-                Technical Team Lead
+                Core team member
               </div>
             </div>
 
             {/* Skills */}
             <div className="mb-6">
               <div className="flex flex-wrap justify-center gap-2">
-                {["Next.js", "Tailwind", "DevOps"].map((skill) => (
+                {["Frontend Development", "UI Design", "ReactJS Integration"].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-blue-500/10 text-blue-300 rounded-full text-sm">
                     {skill}
                   </span>
@@ -273,7 +273,7 @@ const Page = () => {
             {/* Social Links - Enhanced */}
             <div className="flex justify-center items-center gap-6 mt-8">
               <a
-                href="https://www.linkedin.com/in/g-jayaditya/"
+                href="https://www.linkedin.com/in/sahinaparbin/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
@@ -281,7 +281,7 @@ const Page = () => {
                 <FaLinkedin size={30} />
               </a>
               <a
-                href="https://www.instagram.com/g.jay_aditya/"
+                href="https://www.instagram.com/s4hinaura/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
@@ -422,26 +422,26 @@ const Page = () => {
             <div className="relative mb-6">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full opacity-70 blur-md"></div>
               <Image
-                src="/images/individual pics/guru swarupa.png"
-                alt="Member 1"
+                src="/images/individual pics/Sreejith s .jpg"
+                alt="Sreejith S"
                 className="relative w-32 h-32 mx-auto rounded-full border-2 border-white/20"
                 width={128}
                 height={128}
               />
             </div>
             <h3 className="text-xl font-semibold mb-2 text-white font-[Khand]">
-              Guru Swarupa
+              Sreejith S
             </h3>
-            <p className="text-blue-300 mb-4 text-sm">Technical Specialist</p>
+            <p className="text-blue-300 mb-4 text-sm">Team Lead</p>
             <div className="flex justify-center space-x-6">
               <a
-                href="https://www.linkedin.com/in/guru-swarupa-81a0a8262/"
+                href="https://www.linkedin.com/in/sreejith-s-b232092a9/"
                 className="p-2 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
               >
                 <FaLinkedin size={20} />
               </a>
               <a
-                href="https://www.instagram.com/acexswaroop/profilecard/?igsh=MWMyeWJtMmViNXlkdw=="
+                href="https://www.instagram.com/sreejith_s_nair/"
                 className="p-2 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
               >
                 <FaInstagram size={20} />
@@ -459,26 +459,26 @@ const Page = () => {
             <div className="relative mb-6">
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-full opacity-70 blur-md"></div>
               <Image
-                src="/images/individual pics/chintu.png"
-                alt="Member 2"
+                src="/images/individual pics/Anik.jpg"
+                alt="Anik Tiwary"
                 className="relative w-32 h-32 mx-auto rounded-full border-2 border-white/20"
                 width={128}
                 height={128}
               />
             </div>
             <h3 className="text-xl font-semibold mb-2 text-white font-[Khand]">
-              Chintu Rai
+              Anik Tiwary
             </h3>
-            <p className="text-purple-300 mb-4 text-sm">Web Developer</p>
+            <p className="text-purple-300 mb-4 text-sm">Team Lead</p>
             <div className="flex justify-center space-x-6">
               <a
-                href="https://www.linkedin.com/in/chinturai/"
+                href="https://www.linkedin.com/in/anik-tiwary-4a1161292/"
                 className="p-2 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
               >
                 <FaLinkedin size={20} />
               </a>
               <a
-                href="https://www.instagram.com/iamchinturai?igsh=YzljYTk1ODg3Zg=="
+                href="https://www.instagram.com/anik_tiwary08/"
                 className="p-2 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
               >
                 <FaInstagram size={20} />
@@ -496,39 +496,8 @@ const Page = () => {
             <div className="relative mb-6">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full opacity-70 blur-md"></div>
               <Image
-                src="/images/individual pics/sreejith.png"
-                alt="Member 3"
-                className="relative w-32 h-32 mx-auto rounded-full border-2 border-white/20"
-                width={128}
-                height={128}
-              />
-            </div>
-            <h3 className="text-xl font-semibold mb-2 text-white font-[Khand]">
-              Sreejith S
-            </h3>
-            <p className="text-blue-300 mb-4 text-sm">Backend Developer</p>
-            <div className="flex justify-center space-x-6">
-              <a
-                href="https://www.linkedin.com/in/sreejith-s-b232092a9/"
-                className="p-2 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
-              >
-                <FaLinkedin size={20} />
-              </a>
-            </div>
-          </div>
-
-          {/* Member 4 - Enhanced */}
-          <div
-            className="team-card bg-gray-800/60 backdrop-blur-lg rounded-xl p-8 text-center border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-purple-500/20 hover:shadow-xl"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            {/* Profile Image with glow effect */}
-            <div className="relative mb-6">
-              <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-full opacity-70 blur-md"></div>
-              <Image
-                src="/images/individual pics/sahina.png"
-                alt="Member 4"
+                src="/images/individual pics/Sahina.jpg"
+                alt="Sahina Parbin"
                 className="relative w-32 h-32 mx-auto rounded-full border-2 border-white/20"
                 width={128}
                 height={128}
@@ -537,7 +506,7 @@ const Page = () => {
             <h3 className="text-xl font-semibold mb-2 text-white font-[Khand]">
               Sahina Parbin
             </h3>
-            <p className="text-purple-300 mb-4 text-sm">UI/UX Designer</p>
+            <p className="text-blue-300 mb-4 text-sm">Core team member</p>
             <div className="flex justify-center space-x-6">
               <a
                 href="https://www.linkedin.com/in/sahinaparbin/"
@@ -546,78 +515,10 @@ const Page = () => {
                 <FaLinkedin size={20} />
               </a>
               <a
-                href="https://www.instagram.com/s4hinaura?igsh=YzljYTk1ODg3Zg=="
+                href="https://www.instagram.com/s4hinaura/"
                 className="p-2 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
               >
                 <FaInstagram size={20} />
-              </a>
-            </div>
-          </div>
-
-          {/* Member 5 - Enhanced */}
-          <div
-            className="team-card bg-gray-800/60 backdrop-blur-lg rounded-xl p-8 text-center border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-blue-500/20 hover:shadow-xl"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            {/* Profile Image with glow effect */}
-            <div className="relative mb-6">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full opacity-70 blur-md"></div>
-              <Image
-                src="/images/individual pics/anik.png"
-                alt="Member 5"
-                className="relative w-32 h-32 mx-auto rounded-full border-2 border-white/20"
-                width={128}
-                height={128}
-              />
-            </div>
-            <h3 className="text-xl font-semibold mb-2 text-white font-[Khand]">
-              Anik Tiwary
-            </h3>
-            <p className="text-blue-300 mb-4 text-sm">Frontend Developer</p>
-            <div className="flex justify-center space-x-6">
-              <a
-                href="https://www.linkedin.com/in/anik-tiwary-4a1161292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                className="p-2 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
-              >
-                <FaLinkedin size={20} />
-              </a>
-              <a
-                href="https://www.instagram.com/anik_tiwary08/"
-                className="p-2 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
-              >
-                <FaInstagram size={20} />
-              </a>
-            </div>
-          </div>
-
-          {/* Member 6 - Enhanced */}
-          <div
-            className="team-card bg-gray-800/60 backdrop-blur-lg rounded-xl p-8 text-center border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-purple-500/20 hover:shadow-xl"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            {/* Profile Image with glow effect */}
-            <div className="relative mb-6">
-              <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-full opacity-70 blur-md"></div>
-              <Image
-                src="/images/individual pics/arjun.png"
-                alt="Member 6"
-                className="relative w-32 h-32 mx-auto rounded-full border-2 border-white/20"
-                width={128}
-                height={128}
-              />
-            </div>
-            <h3 className="text-xl font-semibold mb-2 text-white font-[Khand]">
-              Arjun Dev
-            </h3>
-            <p className="text-purple-300 mb-4 text-sm">Backend Developer</p>
-            <div className="flex justify-center space-x-6">
-              <a
-                href="https://www.linkedin.com/in/arjundev2005/"
-                className="p-2 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
-              >
-                <FaLinkedin size={20} />
               </a>
             </div>
           </div>

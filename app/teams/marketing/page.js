@@ -126,8 +126,8 @@ const Page = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-indigo-500/30 rounded-full opacity-70 blur-md"></div>
             <div className="relative rounded-full p-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20">
               <Image
-                src="/images/individual pics/bharath.png"
-                alt="Bharath Kumar S"
+                src="/images/individual pics/shibasish.jpg"
+                alt="Shibasish Banerjee"
                 width={228}
                 height={228}
                 className="rounded-full object-cover border-2 border-white/20"
@@ -138,10 +138,10 @@ const Page = () => {
           {/* Name, Title and Bio */}
           <div className="text-center md:text-left flex-1">
             <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500 font-[Khand] mb-2">
-              Bharath Kumar S
+              Shibasish Banerjee
             </h1>
             <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-blue-300 text-lg font-medium mb-4">
-              Marketing Team Lead
+              Team Lead
             </div>
             <p className="text-gray-300 mb-4 font-[GMVF]">
               Leading our marketing initiatives with strategic vision and creative direction. Passionate about building the MLSA brand and expanding our community reach.
@@ -150,7 +150,7 @@ const Page = () => {
             {/* Skills */}
             <div className="mb-6">
               <div className="flex flex-wrap justify-center md:justify-start gap-2">
-                {["Digital Marketing", "Brand Strategy", "Community Building"].map((skill) => (
+                {["Visual Storytelling", "Content Strategy", "Responsive Design Thinking"].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-blue-500/10 text-blue-300 rounded-full text-sm">
                     {skill}
                   </span>
@@ -161,7 +161,7 @@ const Page = () => {
             {/* Social Links - Enhanced */}
             <div className="flex justify-center md:justify-start items-center gap-6 mt-4">
               <a
-                href="https://www.linkedin.com/in/bharathsbk/"
+                href="https://www.linkedin.com/in/shibasishbanerjee/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
@@ -169,7 +169,7 @@ const Page = () => {
                 <FaLinkedin size={30} />
               </a>
               <a
-                href="https://www.instagram.com/mr.sbk03/"
+                href="https://www.instagram.com/shibufrrr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
@@ -315,26 +315,26 @@ const Page = () => {
             <div className="relative mb-6">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-indigo-500/30 rounded-full opacity-70 blur-md group-hover:opacity-100 transition-opacity duration-300"></div>
               <Image
-                src="/images/individual pics/anarghaya.png"
-                alt="Anarghya Gunashekaran"
+                src="/images/individual pics/shibasish.jpg"
+                alt="Shibasish Banerjee"
                 className="relative w-32 h-32 mx-auto rounded-full border-2 border-white/20 group-hover:border-white/40 transition-all duration-300"
                 width={128}
                 height={128}
               />
             </div>
             <h3 className="text-xl font-semibold mb-2 text-white font-[Khand] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-indigo-400 transition-all duration-300">
-              Anarghya Gunashekaran
+              Shibasish Banerjee
             </h3>
-            <p className="text-blue-300 mb-4 text-sm">Social Media Specialist</p>
+            <p className="text-blue-300 mb-4 text-sm">Team Lead</p>
             <div className="flex justify-center space-x-6">
               <a
-                href="https://www.linkedin.com/in/anarghya-gunashekaran-0a06bb331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                href="https://www.linkedin.com/in/shibasishbanerjee/"
                 className="p-2 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
               >
                 <FaLinkedin size={20} />
               </a>
               <a
-                href="https://www.instagram.com/ag25114/profilecard/?igsh=MWt0NTJ3ZHFjcG82eQ=="
+                href="https://www.instagram.com/shibufrrr/"
                 className="p-2 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
               >
                 <FaInstagram size={20} />
@@ -352,7 +352,7 @@ const Page = () => {
             <div className="relative mb-6">
               <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500/30 to-blue-500/30 rounded-full opacity-70 blur-md group-hover:opacity-100 transition-opacity duration-300"></div>
               <Image
-                src="/images/individual pics/neelakshi.png"
+                src="/images/individual pics/Neelakshi.jpg"
                 alt="Neelakshi Yemde"
                 className="relative w-32 h-32 mx-auto rounded-full border-2 border-white/20 group-hover:border-white/40 transition-all duration-300"
                 width={128}
@@ -362,7 +362,7 @@ const Page = () => {
             <h3 className="text-xl font-semibold mb-2 text-white font-[Khand] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-blue-400 transition-all duration-300">
               Neelakshi Yemde
             </h3>
-            <p className="text-indigo-300 mb-4 text-sm">Content Strategist</p>
+            <p className="text-indigo-300 mb-4 text-sm">Core team member</p>
             <div className="flex justify-center space-x-6">
               <a
                 href="https://www.linkedin.com/in/neelakshi-yemde-3b4743306/"
@@ -371,7 +371,7 @@ const Page = () => {
                 <FaLinkedin size={20} />
               </a>
               <a
-                href="https://www.instagram.com/ny._.neelsy?igsh=MWRhbjZ6endmeDlsMA=="
+                href="https://www.instagram.com/ny._.neelsy"
                 className="p-2 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
               >
                 <FaInstagram size={20} />
@@ -389,26 +389,26 @@ const Page = () => {
             <div className="relative mb-6">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-indigo-500/30 rounded-full opacity-70 blur-md group-hover:opacity-100 transition-opacity duration-300"></div>
               <Image
-                src="/images/individual pics/tejas.png"
-                alt="Tejas R Mutalik"
+                src="/images/individual pics/Anarghya.jpg"
+                alt="Anarghya Gunashekharan"
                 className="relative w-32 h-32 mx-auto rounded-full border-2 border-white/20 group-hover:border-white/40 transition-all duration-300"
                 width={128}
                 height={128}
               />
             </div>
             <h3 className="text-xl font-semibold mb-2 text-white font-[Khand] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-indigo-400 transition-all duration-300">
-              Tejas R Mutalik
+              Anarghya Gunashekharan
             </h3>
-            <p className="text-blue-300 mb-4 text-sm">Campaign Coordinator</p>
+            <p className="text-blue-300 mb-4 text-sm">Core team member</p>
             <div className="flex justify-center space-x-6">
               <a
-                href="https://www.linkedin.com/in/tejas-r-mutalik-b03214299/"
+                href="https://www.linkedin.com/in/anarghya-gunashekaran-0a06bb331/"
                 className="p-2 bg-white/5 hover:bg-blue-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
               >
                 <FaLinkedin size={20} />
               </a>
               <a
-                href="https://www.instagram.com/trm_3113/"
+                href="https://www.instagram.com/ag25114/"
                 className="p-2 bg-white/5 hover:bg-pink-500/20 rounded-full text-white/70 hover:text-white transition-all duration-300"
               >
                 <FaInstagram size={20} />
