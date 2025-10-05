@@ -224,9 +224,9 @@ export default function RecruitmentForm() {
                     </p>
                     <div className="bg-gray-900 bg-opacity-30 backdrop-blur-lg rounded-xl p-6 mb-8 text-left">
                         <p className="mb-4">
-                            We're looking for passionate, curious, and creative individuals to join us in shaping 
-                            the club's next chapter. Whether you're into design, tech, storytelling, strategy, or social 
-                            media—there's a space for you to grow, contribute, and co-create.
+                            We&#39;re looking for passionate, curious, and creative individuals to join us in shaping 
+                            the club&#39;s next chapter. Whether you&#39;re into design, tech, storytelling, strategy, or social 
+                            media—there&#39;s a space for you to grow, contribute, and co-create.
                         </p>
                         <p>
                             This form is your chance to show us who you are beyond the resume. We want to know 
@@ -438,7 +438,7 @@ export default function RecruitmentForm() {
 
                                 <div>
                                     <label htmlFor="techProjects" className="block text-sm font-medium text-white mb-2">
-                                        10. Describe a technical project you've worked on that you're proud of. What challenges did you face and how did you overcome them? (required)
+                                        10. Describe a technical project you&#39;ve worked on that you&#39;re proud of. What challenges did you face and how did you overcome them? (required)
                                     </label>
                                     <p className="text-sm text-gray-400 mb-2">
                                         Purpose: Assessing problem-solving skills and project experience.
@@ -450,14 +450,14 @@ export default function RecruitmentForm() {
                                         onChange={handleInputChange}
                                         rows={4}
                                         className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                        placeholder="Tell us about a technical project you're proud of..."
+                                        placeholder="Tell us about a technical project you&#39;re proud of..."
                                         required
                                     ></textarea>
                                 </div>
 
                                 <div>
                                     <label htmlFor="problemSolving" className="block text-sm font-medium text-white mb-2">
-                                        11. How do you approach solving a technical problem you've never encountered before? (required)
+                                        11. How do you approach solving a technical problem you&#39;ve never encountered before? (required)
                                     </label>
                                     <p className="text-sm text-gray-400 mb-2">
                                         Purpose: Understanding your problem-solving approach.
@@ -522,7 +522,7 @@ export default function RecruitmentForm() {
                                         8. What kind of writing do you enjoy—storytelling, summarizing, captioning, or formal communication? Tell us why. (required)
                                     </label>
                                     <p className="text-sm text-gray-400 mb-2">
-                                        Purpose: Helps place them in roles they'll enjoy and thrive in.
+                                        Purpose: Helps place them in roles they&#39;ll enjoy and thrive in.
                                     </p>
                                     <textarea
                                         id="writingPreference"
@@ -538,7 +538,7 @@ export default function RecruitmentForm() {
 
                                 <div>
                                     <label htmlFor="proudContent" className="block text-sm font-medium text-white mb-2">
-                                        9. What's one piece of content (a post, caption, or write-up) you've created that you're proud of? Tell us why. (required)
+                                        9. What&#39;s one piece of content (a post, caption, or write-up) you&#39;ve created that you&#39;re proud of? Tell us why. (required)
                                     </label>
                                     <p className="text-sm text-gray-400 mb-2">
                                         Purpose: Surfaces expressive confidence and self-awareness.
@@ -550,14 +550,14 @@ export default function RecruitmentForm() {
                                         onChange={handleInputChange}
                                         rows={4}
                                         className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                        placeholder="Share a piece of content you're proud of..."
+                                        placeholder="Share a piece of content you&#39;re proud of..."
                                         required
                                     ></textarea>
                                 </div>
 
                                 <div>
                                     <label htmlFor="reelCaption" className="block text-sm font-medium text-white mb-2">
-                                        10. Write a short caption (1–2 lines) for a reel celebrating a team member's achievements. (required)
+                                        10. Write a short caption (1–2 lines) for a reel celebrating a team member&#39;s achievements. (required)
                                     </label>
                                     <p className="text-sm text-gray-400 mb-2">
                                         Purpose: Reveals tone sensitivity and expressive style.
@@ -595,7 +595,7 @@ export default function RecruitmentForm() {
 
                                 <div>
                                     <label htmlFor="learningInterest" className="block text-sm font-medium text-white mb-2">
-                                        12. What's one thing you'd love to learn or improve this term—writing, organizing, designing, or something else? (required)
+                                        12. What&#39;s one thing you&#39;d love to learn or improve this term—writing, organizing, designing, or something else? (required)
                                     </label>
                                     <p className="text-sm text-gray-400 mb-2">
                                         Purpose: Surfaces growth mindset.
@@ -607,7 +607,7 @@ export default function RecruitmentForm() {
                                         onChange={handleInputChange}
                                         rows={4}
                                         className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                        placeholder="Tell us what you'd like to learn or improve..."
+                                        placeholder="Tell us what you&#39;d like to learn or improve..."
                                         required
                                     ></textarea>
                                 </div>
@@ -623,7 +623,7 @@ export default function RecruitmentForm() {
                                         onChange={handleInputChange}
                                         rows={4}
                                         className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                        placeholder="Tell us about other clubs you're part of..."
+                                        placeholder="Tell us about other clubs you&#39;re part of..."
                                         required
                                     ></textarea>
                                 </div>
@@ -791,7 +791,7 @@ export default function RecruitmentForm() {
                                         value={formData.designSoftware}
                                         onChange={handleInputChange}
                                         className="w-full p-3 bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                                        placeholder="List design software you're familiar with..."
+                                        placeholder="List design software you&#39;re familiar with..."
                                         required
                                     />
                                 </div>
@@ -830,7 +830,7 @@ export default function RecruitmentForm() {
 
                                 <div>
                                     <label htmlFor="designProcess" className="block text-sm font-medium text-white mb-2">
-                                        5. Describe, in detail, your process for creating an Instagram post for an event, specify visual elements (like logos, text, and imagery etc), and anything you'd like to add, that you would use. (required)
+                                        5. Describe, in detail, your process for creating an Instagram post for an event, specify visual elements (like logos, text, and imagery etc), and anything you&#39;d like to add, that you would use. (required)
                                     </label>
                                     <textarea
                                         id="designProcess"
